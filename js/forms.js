@@ -1,8 +1,5 @@
 console.clear();
 
-// const formQuestion = document.querySelector('[data-js="form-question"]');
-// const formAnswer = document.querySelector('[data-js="form-answer"]');
-// const formTag = document.querySelector('[data-js="form-tag"]');
 const cardContainer = document.querySelector('[data-js="card-container"]');
 
 const form = document.getElementById("form");
