@@ -7,7 +7,7 @@
 
 <head>
     <title>Forms</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
 
     <script src="/js/cards.js" defer></script>
     <script src="/js/forms.js" defer></script>
@@ -23,31 +23,37 @@
                 <h1>Cool Berlin Quiz </h1>
 
             </header>
-            <br><br><br>
 
-            <main class="profile-main">
+            <main class="main-forms">
 
-                <section class="card-profile">
+                <section class="form-panel">
 
-                    <h2>Create your questions below:</h2> <br>
+                    <h2>Create your questions below:</h2>
 
-                    <form id="form">
+                    <form class="form-box" id="form">
+                        
                         <label for="question">Your question:</label><br>
-                        <textarea id="question" name="form-question" rows="4" cols="50" maxlength="150" data-js="form-question" required> </textarea><br>
-                        <span id="question-count"></span> <br>
+
+                        <textarea placeholder="Limited to 150 characters" id="question" name="form-question" rows="4" cols="50" maxlength="150" data-js="form-question" required> </textarea><br>
+                        Typed characters📝 <span id="question-count"></span><br>
 
                         <br><label for="answer">your answer:</label><br>
-                        <textarea id="answer" name="form-answer" rows="4" cols="50" maxlength="150" data-js="form-answer" required> </textarea>
-                        <br> <span id="answer-count"></span><br>
-                        <br><label for="tag">Your tags:</label>
-                        <input id="tag" name="form-tag" data-js="form-tag" required> </input><br><br>
+                        <textarea placeholder="Limited to 150 characters" id="answer" name="form-answer" rows="4" cols="50" maxlength="150" data-js="form-answer" required> </textarea>
+                        <br> Typed characters📝 <span id="answer-count"></span><br>
+                        
+                        
+                        <br><label for="tag">Your tags: </label>
+                        <input id="tag" name="form-tag" data-js="form-tag" required></input><br><br>
 
                         <input type="submit" data-js="form-submit" value=" create a new bookmark! " required>
                         
                     </form>
                 </section>
                 
-                <section data-js="card-container"></section>
+                <section class="cards" data-js="card-container">
+
+                </section>
+                
 
             </main>
         

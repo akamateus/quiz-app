@@ -17,6 +17,6 @@
 }
 
 .active-bookmark {
-  background-color: var(--redish);
-  color: white;
+  color: var(--redish);
+  font-optical-sizing: 48;
 }

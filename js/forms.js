@@ -55,6 +55,6 @@ function updateCount() {
   const questionCaracters = document.getElementById("question-count");
   const answerCaracters = document.getElementById("answer-count");
 
-  questionCaracters.textContent = `${questionInput.value.length} characters left`;
-  answerCaracters.textContent = `${answerInput.value.length} characters left`;
+  questionCaracters.textContent = `${questionInput.value.length} /150`;
+  answerCaracters.textContent = `${answerInput.value.length} /150`;
 }

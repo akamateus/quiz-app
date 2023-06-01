@@ -13,12 +13,9 @@
   --middark: #526d82;
   --lightdark: #9db2bf;
   --light: #dde6ed;
+  --grey: #626262;
   --redish: #ff0000;
 }
-body {
-  background-color: var(--light);
-}
-
 header {
   width: 100%;
   display: flex;
@@ -31,6 +28,33 @@ header {
   padding-bottom: 10px;
 }
 
+body {
+  background-color: var(--light);
+}
+
+/* Main section for each html page */
+
+.main-index {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.main-bookmarks {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.main-forms {
+  padding-top: 110px;
+  padding-bottom: 100px;
+  align-content: center;
+}
+
+.main-profile {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
 .top {
   display: flex;
   align-items: center;
@@ -39,29 +63,26 @@ header {
   padding-top: 10px;
 }
 
+/*bookmarks*/
+
+.active-bookmark {
+  color: var(--redish);
+  font-optical-sizing: 48;
+}
+
 .bookmark:hover {
   transform: scale(1.5);
 }
 
 .bookmark {
-  border: 1px solid #9f9f9f;
+  zoom: 1.6;
+  border: 0px;
   padding: 0.2rem 0.2rem;
   display: flex;
   margin-top: -20px;
   align-self: flex-end;
   background-color: transparent;
-  color: var(--redish);
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-
-.bookmark--marked {
-  display: flex;
-  margin-top: -20px;
-  align-self: flex-end;
-  background-color: var(--redish);
-  color: white;
-  border-color: white;
+  color: var(--grey);
   cursor: pointer;
   transition-duration: 0.3s;
 }
@@ -82,10 +103,12 @@ header {
   margin-top: 40px;
   border-radius: 20px;
 }
-
+.card-paragraph {
+  padding: 20px;
+}
 .categories {
   display: flex;
-  margin-top: 10px;
+  margin-top: 30px;
   align-self: flex-start;
   gap: 10px;
 }
@@ -98,23 +121,18 @@ header {
   color: var(--light);
 }
 
-button {
-  margin-bottom: 20px;
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
 }
-
 nav {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
 }
 
 .navbutton {
@@ -158,6 +176,7 @@ footer {
 .card-profile {
   text-align: justify;
   align-items: center;
+  align-content: center;
   width: 70%;
   padding: 30px;
   display: flex;
@@ -175,8 +194,22 @@ footer {
 
 .card-settings {
   background-color: var(--lightdark);
-  padding: 10%;
   padding: 30px;
   border-radius: 20px;
   width: 70%;
+}
+
+.form-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  background-color: var(--lightdark);
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 20px;
 }

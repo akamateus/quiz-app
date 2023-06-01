@@ -15,3 +15,8 @@
   --light: #dde6ed;
   --redish: #ff0000;
 }
+
+.main-forms {
+  display: flex;
+  align-content: center;
+}
